@@ -9,10 +9,14 @@ Pod::Spec.new do |s|
 A new Flutter project.
                        DESC
   s.homepage         = 'http://example.com'
+  s.swift_version = '5'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
+  s.resource_bundles = {
+    'qrscan' => ['Assets/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+  }
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
 
